@@ -48,7 +48,7 @@ public class App{ /* Connexion à la base de données */
         while ((line = br.readLine()) != null) {
             String[] cities = line.split(cvsSplitBy);
 
-            System.out.println("INSERT INTO `ville_france`(`Code_commune_INSEE`, `Nom_commune`) VALUES('"+cities[0]+"','"+cities[1]+");");                
+            System.out.println("INSERT into `ville_france`(`Code_commune_INSEE`, `Nom_commune`) VALUES('"+cities[0]+"','"+cities[1]+");");                
             statement.executeUpdate("INSERT INTO `ville_france`(`Code_commune_INSEE`, `Nom_commune`) VALUES('"+cities[0]+"','"+cities[1]+"');");                
         }
         
